@@ -1,15 +1,14 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-main {
+.container-kartu {
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 16px;
 }
@@ -21,6 +20,16 @@ header {
     padding: 16px;
     background: #1f4e79;
     color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
 }
 
 .logo {
@@ -37,14 +46,16 @@ header {
     margin-top: 0;
 }
 
-nav {
-    display: flex;
-    gap: 16px;
-}
 
-nav a{
-    color: white;
-    text-decoration: none;
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.galeri .gambar img {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    height: 150px;
 }
 
 footer {
